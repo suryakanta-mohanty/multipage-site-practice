@@ -73,3 +73,104 @@ nav ul li a:hover::after{
 .header-text h1 span{
   color: #ff004f;
 }
+
+/* ------ about ------- */
+
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1{
+  flex-basis: 35%;
+
+}
+
+.col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.col-2{
+  flex-basis: 60%;
+}
+
+.col-2 .sub-title{
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.col-2 .sub-title::after{
+  content: '';
+  width: 27%;
+  height: 5px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+.about-text{
+  margin: 15px 0;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+}
+
+.tab-titles{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.tab-links::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.15s ease-out;
+}
+
+.tab-links:hover::after{
+  width: 100%;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span{
+  color: #b54769;
+  font-size: 12px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tabs{
+  display: block;
+}
