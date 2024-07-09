@@ -5,6 +5,10 @@
   font-family:Arial, Helvetica, sans-serif ;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: #080808;
   color: white;
@@ -550,4 +554,10 @@ nav .nav-icon{
     font-size: 12px;
     letter-spacing: 0.5px;
   }
+}
+
+#msg{
+  color: #61b752;
+  margin-top: -10px;
+  display: block;
 }
