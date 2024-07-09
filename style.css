@@ -427,5 +427,24 @@ form input, form textarea{
   margin: 15px 0;
   font-size: 15px;
   border-radius: 6px;
-  
+
+}
+
+form label span{
+  color: #ff004f;
+  margin-left: 2px;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  background: #262626;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.copyright i{
+  color: #ff004f;
 }
