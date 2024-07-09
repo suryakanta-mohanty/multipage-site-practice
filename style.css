@@ -43,6 +43,7 @@ nav ul li a{
   text-decoration: none;
   color: white;
   position: relative;
+  font-weight: bold;
 }
 
 nav ul li a::after{
@@ -447,4 +448,106 @@ form label span{
 
 .copyright i{
   color: #ff004f;
+}
+
+/* ------- responsive code -------- */
+
+nav .nav-icon{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url(image/phone-background.png);
+  }
+
+  .container {
+    padding: 10px 7%;
+  }
+
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+    
+  }
+  
+  nav .nav-icon{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 50px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .nav-icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title{
+    font-size: 30px;
+  }
+
+  .col-1, .col-2{
+    flex-basis: 100%;
+  }
+
+  .col-1{
+    margin-bottom: 30px;
+  }
+
+  .col-2{
+    font-size: 14px;
+  }
+
+  .col-2 p{
+    font-size: 13px;
+  }
+
+  .tab-titles .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+
+  #services .sub-title{
+    font-size: 30px;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  .contact-left{
+    margin-bottom: 30px;
+  }
+
+  .btn{
+    margin-top: 30px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 }
